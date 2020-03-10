@@ -20,7 +20,7 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
+    "userion": [
       ">0.2%",
       "not dead",
       "not op_mini all"
