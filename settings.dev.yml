@@ -19,3 +19,21 @@ services:
     ports:
       - 3000:3000
     command: bash -c 'npm install && npm start'
+
+  ad.backend:
+    container_name: ad.backend
+    image: node:10
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+        MONGODB_URI: mongodb+srv://hallison:SvGJyns30c2bd3A5@cluster0-77azw.mongodb.net/test?retryWrites=true&w=majority
+        NODE_ENV: development
+
+    volumes:
+        - ./backend:/home/node/app
+    expose:
+        - "3003"
+    ports:
+        - 3003:3003
+    command: bash -c 'npm install && npm start'
+    
