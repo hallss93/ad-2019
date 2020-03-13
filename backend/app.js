@@ -4,6 +4,7 @@ var cors = require('cors')
 var bodyParser = require('body-parser');
 
 var User = require('./routes/users'); // Imports routes for the users
+var Match = require('./routes/match'); // Imports routes for the match
 var app = express();
 app.use(cors())
 
@@ -20,6 +21,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/users', User);
+app.use('/match', Match);
 
 var port = 3003;
 

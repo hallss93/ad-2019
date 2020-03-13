@@ -70,7 +70,11 @@ function Home() {
         await dispatch(Opx.deleteUser(personEdit._id));
         await modalDeleteOpenFunc(false);
         dispatch(Opx.getUsers());
-        //window.location.reload()
+    }
+
+    const matchFriends = async () => {
+        await dispatch(Opx.match());
+
     }
 
     const Schema = yup.object({
@@ -166,6 +170,10 @@ function Home() {
     return (
         <div className="c-container-body">
             <div className="p-30">
+                <div className="row justify-content-flex-end">
+                    <button className="o-button main ml-20" onClick={() => matchFriends()}>Match Friends</button>
+
+                </div>
                 {modalOpen && Modal()}
                 {modalDeleteOpen && ModalDelete()}
                 <div className="c-form__row row">

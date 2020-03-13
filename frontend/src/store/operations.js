@@ -33,9 +33,16 @@ function deleteUser(_id) {
             .then(res => { });
     };
 }
+function match() {
+    return dispatch => {
+        axios.post(`${utils.URL}/match`)
+            .then(res => { });
+    };
+}
 export default {
     getUsers,
     saveUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    match
 }
