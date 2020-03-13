@@ -1,0 +1,63 @@
+.c-card {
+  background-color: white;
+  box-shadow: 1px 2px 6px #e6e4e4;
+  padding: rem(15);
+
+  &.max-padding {
+    padding: rem(25);
+  }
+  &.no-padding {
+    padding: rem(0);
+  }
+
+  &.divider {
+    margin-top: rem(2);
+    &.divider-left {
+      margin-left: rem(2);
+    }
+    &.divider-right {
+      margin-right: rem(2);
+    }
+  }
+
+  &.bk-light-gray {
+    background-color: $color-background-light-gray;
+  }
+}
+.resume-icon {
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &.orange {
+    background-color: #e79d35;
+  }
+  &.blue {
+    background-color: #6396c2;
+  }
+  &.green {
+    background-color: #9ac93d;
+  }
+}
+.card-flex {
+  display: flex;
+
+  &.center {
+    align-items: center;
+  }
+}
+
+.time-selected {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  color: #848484;
+  font-size: 12px;
+}
+.border-radius-simples {
+  border-radius: rem(4);
+}

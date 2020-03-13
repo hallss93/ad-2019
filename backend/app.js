@@ -1,10 +1,11 @@
 require('dotenv').config();
 var express = require('express');
+var cors = require('cors')
 var bodyParser = require('body-parser');
 
 var User = require('./routes/users'); // Imports routes for the users
 var app = express();
-
+app.use(cors())
 
 // Set up mongoose connection
 var mongoose = require('mongoose');

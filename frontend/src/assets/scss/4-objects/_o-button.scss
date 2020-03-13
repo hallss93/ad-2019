@@ -1,0 +1,75 @@
+.o-button {
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+
+  &.main {
+    font-weight: 600;
+    background-color: #9ac93d;
+    border-radius: 15px;
+    color: white;
+    &:hover {
+      background-color: #9ac93dc7;
+    }
+  }
+
+  &.primary {
+    font-weight: 600;
+    background-color: #66b6ff;
+    border-radius: 15px;
+    color: white;
+    &:hover {
+      background-color: #66b6ffc7;
+    }
+  }
+
+  &.bk-gray {
+    font-weight: 600;
+    background-color: #b3b3b3;
+    border-radius: 15px;
+    color: white;
+    &:hover {
+      background-color: #b3b3b3c7;
+    }
+  }
+
+  &.bk-black {
+    font-weight: 600;
+    background-color: $emperor;
+    border-radius: 15px;
+    color: white;
+    &:hover {
+      background-color: #4e4d4ec7;
+    }
+  }
+
+  &.danger {
+    background-color: transparent;
+    color: $carnation;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: #f0f0f0c7;
+      border-radius: 15px;
+    }
+  }
+
+  &.pg-small {
+    padding: rem(5) rem(18);
+  }
+
+  &.pg-medium {
+    padding: rem(11) rem(25);
+  }
+
+  &.pg-large {
+    padding: rem(11) rem(38);
+  }
+
+  &.pg-huge {
+    padding: rem(11) rem(84);
+  }
+}

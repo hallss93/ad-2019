@@ -1,13 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Provider } from 'react-redux'
 import './App.css';
 import Navbar from './components/Navbar'
+import Home from './components/Home'
+
+// Strore
+import store from './store'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Navbar />
+        <Home />
+      </div>
+    </Provider>
   );
 }
 
