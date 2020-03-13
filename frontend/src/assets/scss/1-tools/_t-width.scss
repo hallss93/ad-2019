@@ -1,0 +1,19 @@
+@use 'sass:math' as *;
+
+$x: 50;
+
+@while $x <= 250 {
+  .width-#{$x} {
+    width: #{$x}px;
+  }
+  $x: $x + 1;
+}
+
+$y: 1;
+@while $y <= 100 {
+  .width-p-#{$y} {
+    width: percentage($y/100);
+    color: white;
+  }
+  $y: $y + 1;
+}

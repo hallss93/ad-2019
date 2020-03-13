@@ -1,0 +1,41 @@
+$x: 0;
+
+@while $x <= 200 {
+  .m-#{$x} {
+    margin: #{$x}px!important;
+  }
+  .mt-#{$x} {
+    margin-top: #{$x}px!important;
+  }
+  .mr-#{$x} {
+    margin-right: #{$x}px!important;
+  }
+  .mb-#{$x} {
+    margin-bottom: #{$x}px!important;
+  }
+  .ml-#{$x} {
+    margin-left: #{$x}px!important;
+  }
+  $x: $x + 5;
+}
+
+$y: 0;
+
+@while $y <= 200 {
+  .p-#{$y} {
+    padding: #{$y}px;
+  }
+  .pt-#{$y} {
+    padding-top: #{$y}px;
+  }
+  .pr-#{$y} {
+    padding-right: #{$y}px!important;
+  }
+  .pb-#{$y} {
+    padding-bottom: #{$y}px!important;
+  }
+  .pl-#{$y} {
+    padding-left: #{$y}px!important;
+  }
+  $y: $y + 5;
+}

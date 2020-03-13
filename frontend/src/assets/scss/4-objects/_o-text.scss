@@ -1,0 +1,73 @@
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+.smaller {
+  font-size: rem(11);
+}
+
+.small {
+  font-size: rem(12);
+}
+
+.normal {
+  font-size: rem(14);
+}
+
+.large {
+  font-size: rem(16);
+}
+
+.huge {
+  font-size: rem(18);
+}
+
+.gigant {
+  font-size: rem(20);
+}
+
+.xl {
+  font-size: rem(24);
+}
+
+.xxl {
+  font-size: rem(26);
+}
+
+.title {
+  font-size: rem(32);
+}
+
+.bold {
+  font-weight: $fw-bold;
+}
+
+.medium {
+  font-weight: $fw-medium;
+}
+
+.regular {
+  font-weight: $fw-regular;
+}
+
+.semi-bold {
+  font-weight: $fw-semi-bold;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.text-stripe {
+  text-decoration: line-through;
+  &.gray {
+    color: gray;
+  }
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}

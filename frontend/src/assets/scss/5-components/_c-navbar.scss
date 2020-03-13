@@ -1,0 +1,32 @@
+.c-navbar {
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  z-index: 2;
+  padding: rem(10) rem(30);
+
+  .item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: rem(20) rem(25);
+
+    &.noPadding {
+      padding: rem(0);
+      &.topBottom {
+        padding: rem(0) rem(25);
+      }
+      &.leftRight {
+        padding: rem(25) rem(0);
+      }
+    }
+    &.first {
+      width: rem(250-25-25-30);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.a-transition {
+  &.s-07 {
+    transition: all 0.7s;
+  }
+  &.s-05 {
+    transition: all 0.5s;
+  }
+  &.s-1 {
+    transition: all 1s;
+  }
+}

@@ -1,0 +1,68 @@
+.c-avatar {
+    width: rem(70);
+    height: rem(70);
+    border-radius: 50%;
+    border: 1px solid $placeholder; // to remove after
+  
+    &.small {
+      width: rem(50);
+      height: rem(50);
+    }
+    &.large {
+      width: rem(100);
+      height: rem(100);
+    }
+    &.bordered {
+      border: 8px solid white;
+    }
+  }
+  
+  app-avatar {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 10%;
+  }
+  
+  .c-avatar-photo {
+    &.cicle-container {
+      height: rem(140);
+      width: rem(150);
+      align-items: center;
+      display: flex;
+      position: absolute;
+      border: rem(10) solid white;
+      background: white;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      &.border-left {
+        right: 10%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      &.border-right {
+        left: 10%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+      }
+  
+      .cicle {
+        display: flex;
+        background: $placeholder;
+        position: relative;
+        border-radius: 50%;
+        padding: rem(30);
+        height: rem(70);
+        width: rem(70);
+        justify-content: center;
+        flex: -1.5;
+        border: rem(10) solid white;
+  
+        .cicle-img {
+          height: rem(50);
+        }
+      }
+    }
+  }
+  

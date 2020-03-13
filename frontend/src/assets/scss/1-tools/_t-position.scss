@@ -1,0 +1,33 @@
+$x: 0;
+
+@while $x <= 70 {
+  .top-#{$x} {
+    top: #{$x}px;
+  }
+  .right-#{$x} {
+    right: #{$x}px;
+  }
+  .bottom-#{$x} {
+    bottom: #{$x}px;
+  }
+  .left-#{$x} {
+    left: #{$x}px;
+  }
+  .width-#{$x} {
+    width: #{$x}px;
+  }
+
+  .top--#{$x} {
+    top: -#{$x}px;
+  }
+  .right--#{$x} {
+    right: -#{$x}px;
+  }
+  .bottom--#{$x} {
+    bottom: -#{$x}px;
+  }
+  .left--#{$x} {
+    left: -#{$x}px;
+  }
+  $x: $x + 1;
+}
